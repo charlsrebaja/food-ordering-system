@@ -1,5 +1,7 @@
 'use client'
 
+export const dynamic = 'force-dynamic'
+
 import { useState } from 'react'
 import { useRouter } from 'next/navigation'
 import { useSession } from 'next-auth/react'
@@ -180,6 +182,7 @@ export default function CheckoutPage() {
                           type="radio"
                           id="cash"
                           name="payment"
+                          title="Cash on Delivery"
                           defaultChecked
                           disabled={isLoading}
                         />
